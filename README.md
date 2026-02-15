@@ -29,7 +29,7 @@ The core of this VQA system is the **Attention-based Fusion** strategy.
 
 #### How it works:
 1.  **Feature Projection:**
-    -   Image features ($2048 \to \text{hidden\_dim}$) and Question features ($768 \to \text{hidden\_dim}$) are projected into a common embedding space using linear layers.
+    -   Image features (`2048 -> hidden_dim`) and Question features (`768 -> hidden_dim`) are projected into a common embedding space using linear layers.
 2.  **Joint Representation:**
     -   The projected features are combined (broadcasted addition) and passed through a non-linear activation (`tanh`) to create a joint representation of the question and each image region.
 3.  **Attention Scoring:**
